@@ -44,6 +44,31 @@
 }
 
 // mobile screen with hamburger menu
-// @media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
+  // verticalise
+  #hamitems li a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid $secondary;
+    padding-top: 5px;
+  }
 
-// }
+  // show hamburger
+  #hamnav label {
+    display: inline-block;
+    color: $primary;
+    background: $navbar-blue;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  // toggle show/hide
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}

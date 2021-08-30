@@ -97,6 +97,12 @@ body {
   padding: 1rem 0 0 0;
   margin: 1rem 0 0 0;
 }
+.container .navbar label {
+  display: none;
+}
+.container .navbar #hamburger {
+  display: none;
+}
 .container .navbar ul {
   display: flex;
   justify-content: space-between;
@@ -189,7 +195,7 @@ body {
     font-size: 4rem;
   }
   .container .navbar {
-    background: #03052b;
+    background: #011172;
     margin: 0;
     padding: 0;
   }
@@ -201,5 +207,30 @@ body {
     margin: 0.375rem;
     padding: 0.375rem;
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #hamitems li a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #db5e16;
+    padding-top: 5px;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    color: #ebebeb;
+    background: #011172;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: block;
   }
 }
