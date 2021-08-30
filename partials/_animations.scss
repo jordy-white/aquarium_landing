@@ -1,0 +1,49 @@
+/* animations */
+.titles > * {
+  animation: fadeUp 2s ease-out forwards;
+  animation-fill-mode: both;
+}
+
+.titles .title:nth-child(2) {
+  animation-delay: 0s;
+}
+.titles .title:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.titles .title:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.titles .paragraph {
+  animation-delay: 0.8s;
+}
+.titles .info-button {
+  animation-delay: 1.2s;
+}
+
+.navbar {
+  animation: fadeIn 3s ease-in forwards;
+  animation-fill-mode: both;
+}
+
+// keyframes
+@keyframes fadeUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,49 @@
+// media queries
+
+// intermediate screen
+@media screen and (max-width: 768px) {
+  #video-background {
+    display: none;
+  }
+
+  #image-background {
+    display: inline;
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    position: relative;
+
+    .titles {
+      .title {
+        font-size: 4rem;
+      }
+    }
+
+    .navbar {
+      background: $navbar-blue;
+      margin: 0;
+      padding: 0;
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+          margin: 0.375rem;
+          padding: 0.375rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// mobile screen with hamburger menu
+// @media screen and (max-width: 400px) {
+
+// }
