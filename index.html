@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kawasaki Aquarium</title>
+    
+    <!-- links -->
     <link rel="stylesheet" href="css/index.css" />
+    
   </head>
   <body>
+    
+    <script src="/js/script.js"></script>
     <!-- background video -->
     <video id="video-background" preload autoplay muted loop>
       <source src="assets/jellyfish_video.mp4" type="video/mp4" />
@@ -40,8 +45,15 @@
       <nav class="navbar" id="hamnav">
         
         <!-- hamurger -->
-        <label for="hamburger">&#9776</label>
+        <label for="hamburger" id="hamlabel">&#9776</label>
         <input type="checkbox" id="hamburger" />
+        
+        <!-- toggle to X: put in separate file? -->
+        <script>
+          document.getElementById("hamburger").onclick = function () {
+            document.getElementById("hamlabel").innerHTML = this.checked ? "X" : "&#9776;";
+          };
+        </script>
 
         <!-- nav items -->
         <ul id="hamitems">
@@ -52,25 +64,5 @@
         </ul>
       </nav>
     </header>
-
-    <!-- let's add a sign-up section utilizing javascript
-    <section class="sign-up">
-      <div>
-        <h2>Sign up for news and events</h2>
-        <form action="">
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Enter email address"
-            aria-label="email contact"
-          />
-        </form>
-        <button class="submit-button">
-          <img src="" alt="" />
-          <p>sign up</p>
-        </button>
-      </div>
-    </section> -->
   </body>
 </html>
