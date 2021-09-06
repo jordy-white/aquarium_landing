@@ -43,8 +43,10 @@
   }
 }
 
-// mobile screen with hamburger menu
+// mobile screen
 @media screen and (max-width: 400px) {
+  // hamburger menu
+
   // verticalise
   #hamitems li a {
     box-sizing: border-box;
@@ -76,4 +78,21 @@
   //   position: fixed;
   //   top: 0;
   // }
+
+  // resizing
+  .container {
+    .titles {
+      .title {
+        font-size: 3rem;
+      }
+
+      .paragraph {
+        font-size: 1.2rem;
+      }
+
+      .info-button {
+        font-size: 1rem;
+      }
+    }
+  }
 }
