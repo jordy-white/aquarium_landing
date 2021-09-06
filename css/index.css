@@ -233,4 +233,14 @@ body {
   #hamnav input:checked ~ #hamitems {
     display: block;
   }
+
+  .container .titles .title {
+    font-size: 3rem;
+  }
+  .container .titles .paragraph {
+    font-size: 1.2rem;
+  }
+  .container .titles .info-button {
+    font-size: 1rem;
+  }
 }
