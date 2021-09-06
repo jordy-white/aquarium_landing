@@ -1,8 +1,8 @@
 # Kawasaki Aquarium
 
-## *Landing page for a hypothetical business*
+## _Landing page for a hypothetical business_
 
-[View here](http://www.blah.com) <br><br>
+[View here](https://aquarium-landing.vercel.app/) <br><br>
 
 - ⚡**TOOLS:** HTML, CSS, SASS, Gulp, JS <br>
 - 🥅**GOALS and DECISIONS:** Although a small project, I wanted to get more out of SASS than I have in the past. I made more use of variables this time around, and made sure to separate concerns with partials and imports (I understand @import is depreciated now). I also used GULP for the first time, and used pure CSS to create a hamburger menu.<br>
