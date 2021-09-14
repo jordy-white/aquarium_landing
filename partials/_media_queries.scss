@@ -1,7 +1,7 @@
 // media queries
 
 // intermediate screen
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   #video-background {
     display: none;
   }
@@ -44,7 +44,11 @@
 }
 
 // mobile screen
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
+  #image-background {
+    height: 110%;
+  }
+
   // hamburger menu
 
   // verticalise

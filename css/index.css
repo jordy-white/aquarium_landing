@@ -174,7 +174,7 @@ body {
     opacity: 1;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   #video-background {
     display: none;
   }
@@ -209,7 +209,11 @@ body {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
+  #image-background {
+    height: 110%;
+  }
+
   #hamitems li a {
     box-sizing: border-box;
     display: block;
